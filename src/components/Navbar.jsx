@@ -1,8 +1,15 @@
 "use client";
+import { Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+
+  const pathName = usePathname();
+  const isHome = pathName === "/";
+  const isAnimals = pathName === "/all-animals";
+  const isCart = pathName === "/cart";
   return (
     <div className="border-b px-2">
       <nav className=" flex justify-between items-center  py-3 px-6 max-w-7xl mx-auto w-full">
@@ -24,26 +31,30 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-5 text-sm">
           <li>
-            <Link href={"/"}>Home</Link>
+            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${
+          isHome ? "bg-lime-500" : "bg-taupe-400"
+        }`}><Link href={"/"}>Home</Link></Button>
           </li>
           <li>
-            <Link href={"/all-photos"}>All Photos</Link>
+            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${
+          isAnimals ? "bg-lime-500" : "bg-taupe-400"
+        }`}><Link href={"/all-animals"}>All Animals</Link></Button>
           </li>
-          <li>
-            <Link href={"/pricing"}>Pricing</Link>
-          </li>
-          <li>
-            <Link href={"/profile"}>Profile</Link>
+          <li >
+            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${
+          isCart ? "bg-lime-500" : "bg-taupe-400"
+        }`}><Link  href={"/cart"}>Cart</Link></Button>
+            
           </li>
         </ul>
 
         <div className="flex gap-4">
-          <ul className="flex items-center  text-sm">
+          <ul className="flex items-center  text-sm gap-3">
             <li>
-              <Link href={"/signup"}>SignUp</Link>
+              <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signup"}>SignUp</Link></Button>
             </li>
             <li>
-              <Link href={"/signin"}>SignIn</Link>
+              <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signin"}>SignIn</Link></Button>
             </li>
           </ul>
         </div>

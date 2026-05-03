@@ -1,0 +1,163 @@
+{
+    "models": [
+        {
+            "id": 1,
+            "name": "North Buffalo",
+            "type": "Buffalo",
+            "breed": "Hybrid",
+            "price": 250000,
+            "weight": 260,
+            "age": 2,
+            "location": "Pabna",
+            "description": "Healthy hybrid buffalo ",
+            "image": "https://i.im.ge/QMlTM79/syed-ahmad-jCLiEivL728-unsplash.jpg",
+            "category": "Large Animal"
+        },
+         {
+            "id": 2,
+            "name": "Black Bengal Goat",
+            "type": "Goat",
+            "breed": "Black Bengal",
+            "price": 20000,
+            "weight": 35,
+            "age": 2,
+            "location": "Khulna",
+            "description": "Popular Black Bengal goat, tender meat quality",
+            "image": "https://i.im.ge/QMXfoD0/black-goat.jpg",
+            "category": "Small Animal"
+        },
+        
+        {
+            "id": 3,
+            "name": "Deshi Shahi Cow",
+            "type": "Cow",
+            "breed": "Local Deshi",
+            "price": 120000,
+            "weight": 280,
+            "age": 3,
+            "location": "Bogura",
+            "description": "Healthy local cow suitable for Qurbani",
+            "image": "https://i.im.ge/QMXVAiy/images.jpg",
+            "category": "Large Animal"
+        },
+         {
+            "id": 4,
+            "name": "Deshi Sheep",
+            "type": "Sheep",
+            "breed": "Local",
+            "price": 17000,
+            "weight": 32,
+            "age": 1.8,
+            "location": "Pabna",
+            "description": "Affordable sheep",
+            "image": "https://i.im.ge/QMlEVLX/VTL7.webp",
+            "category": "Medium Animal"
+        },
+    
+        {
+            "id": 5,
+            "name": "White Jamunapari Goat",
+            "type": "Goat",
+            "breed": "Jamunapari",
+            "price": 30000,
+            "weight": 45,
+            "age": 2,
+            "location": "Mymensingh",
+            "description": "Tall and healthy goat",
+            "image": "https://i.im.ge/QMXfsMS/I9gONaz61tx0puPeVLYoHRlxyNU.webp",
+            "category": "Small Animal"
+        },
+        {
+            "id": 6,
+            "name": "Sahiwal Premium Cow",
+            "type": "Cow",
+            "breed": "Sahiwal",
+            "price": 180000,
+            "weight": 350,
+            "age": 4,
+            "location": "Rajshahi",
+            "description": "High quality Sahiwal breed",
+            "image": "https://i.im.ge/QMXVYCF/19d420b4843e7b4f4b48c11b44b2d22b.jpg",
+            "category": "Large Animal"
+        },
+       
+        {
+            "id": 7,
+            "name": "Brahman Giant Cow",
+            "type": "Cow",
+            "breed": "Brahman",
+            "price": 220000,
+            "weight": 400,
+            "age": 5,
+            "location": "Dhaka",
+            "description": "Large Brahman cow",
+            "image": "https://i.im.ge/QMXVibW/uttam-patidar-qsjs7Dw0ziw-unsplash.jpg",
+            "category": "Large Animal"
+        },
+        {
+            "id": 8,
+            "name": "Local Brown Goat",
+            "type": "Goat",
+            "breed": "Deshi",
+            "price": 18000,
+            "weight": 30,
+            "age": 1.5,
+            "location": "Barisal",
+            "description": "Healthy local goat",
+            "image": "https://i.im.ge/QMXeZr0/boer-female-goat-very-awarded-600nw-2455094457.webp",
+            "category": "Small Animal"
+        },
+        {
+            "id": 9,
+            "name": "Crossbreed Sheep",
+            "type": "Sheep",
+            "breed": "Cross",
+            "price": 20000,
+            "weight": 36,
+            "age": 2,
+            "location": "Dinajpur",
+            "description": "Crossbreed sheep",
+            "image": "https://i.im.ge/QMlQpwy/pexels-strannik-sk-37318610.jpg",
+            "category": "Medium Animal"
+        },
+        {
+            "id": 10,
+            "name": "Deshi Red Cow",
+            "type": "Cow",
+            "breed": "Local Red",
+            "price": 95000,
+            "weight": 250,
+            "age": 3,
+            "location": "Rangpur",
+            "description": "Affordable cow",
+            "image": "https://i.im.ge/QMXVGlf/RS-21058-1024x681.webp",
+            "category": "Large Animal"
+        },
+        {
+            "id": 11,
+            "name": "Hybrid White Goat",
+            "type": "Goat",
+            "breed": "Hybrid",
+            "price": 25000,
+            "weight": 40,
+            "age": 2,
+            "location": "Sylhet",
+            "description": "Hybrid healthy goat",
+            "image": "https://i.im.ge/QMlQnXz/product-500x500.webp",
+            "category": "Small Animal"
+        },
+       {
+            "id": 12,
+            "name": "Premium Sheep",
+            "type": "Sheep",
+            "breed": "Garole",
+            "price": 22000,
+            "weight": 38,
+            "age": 2,
+            "location": "Jessore",
+            "description": "Soft wool and healthy sheep",
+            "image": "https://i.im.ge/QMXfF6G/images_1_.jpg",
+            "category": "Medium Animal"
+        }
+    ]
+}
