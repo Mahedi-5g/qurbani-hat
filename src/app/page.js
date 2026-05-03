@@ -5,7 +5,7 @@ import TipsTops from "@/components/TipsTops";
 
 export default function Home() {
   return (
-    <div className="pb-28">
+    <div className="pb-9">
       <Banner></Banner>
       <FeaturedAnimals></FeaturedAnimals>
       <TipsTops></TipsTops>
