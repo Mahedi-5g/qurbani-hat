@@ -29,10 +29,12 @@ const FeaturedAnimals = async () => {
                 ))}
             </div>
 
-
-            <Button className="absolute -bottom-14 left-1/2 -translate-x-1/2 bg-linear-to-r from-taupe-500 via-lime-500 to-taupe-500 text-white px-16 py-3">
+            <div className="w-full flex justify-center">
+               <Button className="bg-linear-to-r from-taupe-500 via-lime-500 to-taupe-500 text-white mt-6 mb-10 px-16 py-3">
                 View All...
-            </Button>
+            </Button> 
+            </div>
+            
         </div>
     );
 };

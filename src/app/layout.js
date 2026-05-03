@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
+      data-theme="light"
       className={`${montserrat.variable} ${roboto.variable}`}
     >
       <body className="min-h-screen font-body">
