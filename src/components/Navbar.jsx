@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const pathName = usePathname();
   const isHome = pathName === "/";
-  const isAnimals = pathName === "/all-animals";
+  const isAnimals = pathName === "/allAnimals";
   const isCart = pathName === "/cart";
   return (
     <div className="border-b px-2">
@@ -38,7 +38,7 @@ const Navbar = () => {
           <li>
             <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${
           isAnimals ? "bg-lime-500" : "bg-taupe-400"
-        }`}><Link href={"/all-animals"}>All Animals</Link></Button>
+        }`}><Link href={"/allAnimals"}>All Animals</Link></Button>
           </li>
           <li >
             <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${
