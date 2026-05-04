@@ -1,5 +1,6 @@
 import { Button } from '@heroui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const allAnimals = async () => {
@@ -24,9 +25,12 @@ const allAnimals = async () => {
 
                         <h2 className="mt-3 text-lg font-semibold">{model.name}</h2>
                         <div className='flex justify-end'>
+                            <Link href={`/allAnimals/${model.id}`}>
                             <Button className="bg-taupe-500 hover:bg-taupe-300 text-white my-2 hover:t">
                                 View Details
                             </Button>
+                            </Link>
+                            
                         </div>
 
 

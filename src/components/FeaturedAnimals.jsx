@@ -8,7 +8,7 @@ const FeaturedAnimals = async () => {
     const models = await res.json();
     const firstFour = models.slice(0, 4);
     return (
-        <div className="relative px-6">
+        <div id="featured-section" className="relative px-6">
             <h1 className="text-2xl font-bold my-8 text-center">
                 Featured Animals
             </h1>
@@ -26,9 +26,12 @@ const FeaturedAnimals = async () => {
 
                         <h2 className="mt-3 text-lg font-semibold">{model.name}</h2>
                         <div className='flex justify-end'>
-                            <Button className="bg-taupe-500 hover:bg-taupe-300 text-white my-2 hover:t">
-                                View Details
-                            </Button>
+                            <Link href={`/allAnimals/${model.id}`}>
+                                <Button className="bg-taupe-500 hover:bg-taupe-300 text-white my-2 hover:t">
+                                    View Details
+                                </Button>
+                            </Link>
+
                         </div>
                     </div>
                 ))}
