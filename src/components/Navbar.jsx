@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="flex gap-4">
           <ul className="flex items-center  text-sm gap-3">
             <li>
-              <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signup"}>SignUp</Link></Button>
+              <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signUp"}>SignUp</Link></Button>
             </li>
             <li>
               <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signin"}>SignIn</Link></Button>
