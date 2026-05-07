@@ -54,7 +54,7 @@ const Navbar = () => {
               <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signUp"}>SignUp</Link></Button>
             </li>
             <li>
-              <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signin"}>SignIn</Link></Button>
+              <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signIn"}>SignIn</Link></Button>
             </li>
           </ul>
         </div>
