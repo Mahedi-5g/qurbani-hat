@@ -38,7 +38,7 @@ export default function SignInPage() {
 
 
   return (
-    <Card className="border mx-auto w-125 py-10 mt-5">
+    <Card className="border mx-auto w-125 py-10 mt-6 mb-9 ">
       <h1 className="text-center text-2xl font-bold">Sign In</h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
@@ -99,7 +99,7 @@ export default function SignInPage() {
 
       <p className="text-center">Or</p>
 
-      <Button onClick={handlGoogleSignIn} variant="outline" className={'w-full'}><GrGoogle/> Sign In With Google</Button>
+      <Button onClick={handlGoogleSignIn} variant="outline" className={'w-full'}><GrGoogle className="text-fuchsia-500"/> Sign In With Google</Button>
     </Card>
   );
 }
