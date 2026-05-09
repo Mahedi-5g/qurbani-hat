@@ -4,7 +4,7 @@ import Link from "next/link";
 
 
 const FeaturedAnimals = async () => {
-    const res = await fetch("http://localhost:8000/models", { cache: "no-store" });
+    const res = await fetch("https://qurbanihat-server-vdun.onrender.com/models", { cache: "no-store" });
     const models = await res.json();
     const firstFour = models.slice(0, 4);
     return (

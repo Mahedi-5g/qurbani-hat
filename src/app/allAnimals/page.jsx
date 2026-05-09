@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const allAnimals = async () => {
-    const res = await fetch("http://localhost:8000/models", { cache: "no-store" });
+    const res = await fetch("https://qurbanihat-server-vdun.onrender.com/models", { cache: "no-store" });
     const models = await res.json()
     return (
         <div className='px-7 py-10'>

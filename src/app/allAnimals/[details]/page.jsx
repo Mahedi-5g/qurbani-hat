@@ -3,7 +3,7 @@ import React from 'react';
 
 const animalDetails = async ({ params }) => {
     const { details } = await params;
-    const res = await fetch("http://localhost:8000/models", { cache: "no-store" });
+    const res = await fetch("https://qurbanihat-server-vdun.onrender.com/models", { cache: "no-store" });
     const models = await res.json();
     const model = models.find(m => m.id == details)
 
