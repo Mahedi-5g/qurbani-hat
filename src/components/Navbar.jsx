@@ -11,6 +11,7 @@ const Navbar = () => {
   const isHome = pathName === "/";
   const isAnimals = pathName === "/allAnimals";
   const isCart = pathName === "/cart";
+  const isProfile = pathName === "/profilePage"
 
   const userData = authClient.useSession()
   const user = userData.data?.user
@@ -50,6 +51,11 @@ const Navbar = () => {
           <li >
             <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isCart ? "bg-lime-500" : "bg-taupe-400"
               }`}><Link href={"/cart"}>Cart</Link></Button>
+
+          </li>
+          <li >
+            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isProfile ? "bg-lime-500" : "bg-taupe-400"
+              }`}><Link href={"/profilePage"}>Profile</Link></Button>
 
           </li>
         </ul>
