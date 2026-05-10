@@ -13,7 +13,7 @@ const animalDetails = async ({ params }) => {
             <div className="hero bg-base-200 h-fit p-8 rounded-2xl">
                 <div className="hero-content flex-col lg:flex-row">
                     <Image
-                        src={model.image.trim()}
+                        src={model.image}
                         alt={model.name}
                         width={400}
                         height={400}
