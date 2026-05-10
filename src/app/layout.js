@@ -2,6 +2,7 @@ import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 
 const montserrat = Montserrat({
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-screen font-body">
         <Navbar></Navbar>
+        <Toaster position="right-top" />
          <main>
           {children}
          </main>
