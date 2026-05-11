@@ -123,7 +123,7 @@ const AnimalDetailsPage = () => {
                         alt={model.name}
                         width={500}
                         height={500}
-                        className="rounded-2xl w-full lg:w-122.5 h-87.5 object-cover shadow-lg"
+                        className="rounded-2xl w-full lg:w-122.5 lg:h-87.5 object-cover shadow-lg"
                     />
 
                     <div className="space-y-4 w-full">
