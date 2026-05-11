@@ -160,23 +160,19 @@ export default function SignUpPage() {
 
         <div className="my-6 flex items-center gap-3">
 
-          <div className="h-0.5 bg-gray-300 flex-1"></div>
-
           <p className="text-gray-500 text-sm">
             OR
           </p>
-
-          <div className="h-0.5 bg-gray-300 flex-1"></div>
 
         </div>
 
         <Button
           type="button"
           onClick={handleGoogleSignUp}
-          className="w-full border border-gray-300 bg-white hover:bg-gray-100 text-black"
+          className="w-full "
         >
 
-          <GrGoogle className="text-fuchsia-500 text-lg" />
+          <GrGoogle className="text-fuchsia-500 " />
 
           Sign Up With Google
 

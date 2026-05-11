@@ -31,17 +31,18 @@ export default function SignInPage() {
 
   const handleGoogleSignIn = async () => {
     await authClient.signIn.social({
-        provider: 'google'
+      provider: 'google'
     })
   }
 
 
 
   return (
-    <Card className="border mx-auto w-125 py-10 mt-6 mb-9 ">
-      <h1 className="text-center text-2xl font-bold">Sign In</h1>
+    <div className="px-4 py-8">
+    <Card className="border w-full max-w-md md:max-w-lg mx-auto py-8 md:py-10 px-5 md:px-8 shadow-xl rounded-3xl">
+      <h1 className="text-center text-3xl font-bold text-taupe-500 mb-6">Sign In</h1>
 
-      <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+      <Form className="flex w-full flex-col gap-5" onSubmit={onSubmit}>
         <TextField
           isRequired
           name="email"
@@ -55,7 +56,7 @@ export default function SignInPage() {
           }}
         >
           <Label>Email</Label>
-          <Input placeholder="john@example.com" />
+          <Input placeholder="john@example.com" className="w-full"/>
           <FieldError />
         </TextField>
 
@@ -79,34 +80,41 @@ export default function SignInPage() {
           }}
         >
           <Label>Password</Label>
-          <Input placeholder="Enter your password" />
+          <Input placeholder="Enter your password" className="w-full" />
           <Description>
             Must be at least 8 characters with 1 uppercase and 1 number
           </Description>
           <FieldError />
         </TextField>
 
-        <div className="flex gap-2">
-          <Button type="submit">
+        <div className="flex flex-col sm:flex-row gap-3 w-full pt-2">
+          <Button type="submit" className="w-full bg-lime-500 text-white">
             <Check />
             Submit
           </Button>
-          <Button type="reset" variant="secondary">
+          <Button type="reset" variant="secondary" className="w-full">
             Reset
           </Button>
         </div>
       </Form>
 
-      <p className="text-center">Or</p>
+      <div className="my-6 flex items-center gap-3">
+
+        <p className="text-gray-500 text-sm">
+          OR
+        </p>
+
+      </div>
 
       <Button
-                type="button"
-                onClick={handleGoogleSignIn}
-                className="w-full"
-            >
-                <GrGoogle className="text-fuchsia-500" />
-                Sign In With Google
-            </Button>
+        type="button"
+        onClick={handleGoogleSignIn}
+        className="w-full"
+      >
+        <GrGoogle className="text-fuchsia-500" />
+        Sign In With Google
+      </Button>
     </Card>
+    </div>
   );
 }

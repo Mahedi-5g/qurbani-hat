@@ -9,7 +9,7 @@ const Banner = () => {
     }
   }
   return (
-    <section className="relative h-125 w-full rounded-2xl overflow-hidden">
+    <section className="relative h-125 w-full overflow-hidden">
 
       <div className="absolute inset-0 bg-[url('/banner2.png')] bg-cover bg-center h-full" />
       <div className="absolute inset-0 flex flex-col items-center text-taupe-500 pt-5">
