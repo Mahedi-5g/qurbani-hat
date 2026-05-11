@@ -14,7 +14,8 @@ const FeaturedAnimals = async () => {
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {firstFour.map((model) => (
-                    <div key={model.id} className="border p-3 rounded-lg shadow-sm">
+                    <div key={model.id} className="border border-slate-200 p-3 rounded-lg shadow-sm transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg">
 
                         <Image
                             src={model.image.trim()}
@@ -27,7 +28,8 @@ const FeaturedAnimals = async () => {
                         <h2 className="mt-3 text-lg font-semibold">{model.name}</h2>
                         <div className='flex justify-end'>
                             <Link href={`/allAnimals/${model.id}`}>
-                                <Button className="bg-taupe-500 hover:bg-taupe-300 text-white my-2 hover:t">
+                                <Button className="bg-taupe-500 hover:bg-taupe-300 text-white my-2 transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg">
                                     View Details
                                 </Button>
                             </Link>

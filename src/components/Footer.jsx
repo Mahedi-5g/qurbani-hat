@@ -1,8 +1,20 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10">
+        <footer className="footer sm:footer-horizontal bg-taupe-300 text-base-content p-10">
+            <div>
+                <Image src={"/web-app-manifest-192x192.png"}
+                    alt="logo"
+                    loading="eager"
+                    width={60}
+                    height={60}
+                    className="object-cover h-auto w-auto rounded-3xl">
+
+                </Image>
+                <p>Copyright © {new Date().getFullYear()} - All right reserved by QurbaniHat Organization Ltd</p>
+            </div>
             <nav>
                 <h6 className="footer-title">Services</h6>
                 <a className="link link-hover">Branding</a>
@@ -55,6 +67,7 @@ const Footer = () => {
                     </a>
                 </div>
             </nav>
+            
         </footer>
     );
 };

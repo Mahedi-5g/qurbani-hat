@@ -56,7 +56,8 @@ const AllAnimals = () => {
             <select
                 onChange={(e) => setSortOrder(e.target.value)}
                 defaultValue="Sort by Price"
-                className="select appearance-none my-4 pt-1"
+                className="select appearance-none my-4 pt-1 transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg"
             >
                 <option disabled>Sort by Price</option>
                 <option>High to Low</option>
@@ -65,7 +66,8 @@ const AllAnimals = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {sortedModels.map((model) => (
-                    <div key={model.id} className="border p-3 rounded-lg shadow-sm">
+                    <div key={model.id} className="border border-slate-200 p-3 rounded-lg shadow-sm transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg">
                         <Image
                             src={model.image.trim()}
                             alt={model.name}

@@ -16,7 +16,8 @@ const Banner = () => {
         <h1 className="text-7xl font-bold">QURBANI</h1>
         <p className="text-4xl font-bold ml-38 ">1447 | 2026</p>
         <p className="text-3xl font-semibold mt-8 text-white">Book your livestock Here</p>
-        <Button onClick={handleScroll} className="mt-14 bg-linear-to-r from-taupe-500 via-lime-500 to-taupe-500 text-white px-16 py-3">
+        <Button onClick={handleScroll} className="mt-14 bg-linear-to-r from-taupe-500 via-lime-500 to-taupe-500 text-white px-16 py-3 transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg">
           Browse Animals
         </Button>
       </div>

@@ -18,7 +18,7 @@ const Navbar = () => {
   const userData = authClient.useSession()
   const user = userData.data?.user
 
-  const handleSignOut = async()=>{
+  const handleSignOut = async () => {
     await authClient.signOut()
   }
 
@@ -43,20 +43,24 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-5 text-sm">
           <li>
-            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isHome ? "bg-lime-500" : "bg-taupe-400"
+            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg ${isHome ? "bg-lime-500" : "bg-taupe-400"
               }`}><Link href={"/"}>Home</Link></Button>
           </li>
           <li>
-            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isAnimals ? "bg-lime-500" : "bg-taupe-400"
+            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg ${isAnimals ? "bg-lime-500" : "bg-taupe-400"
               }`}><Link href={"/allAnimals"}>All Animals</Link></Button>
           </li>
           <li >
-            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isCart ? "bg-lime-500" : "bg-taupe-400"
+            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg ${isCart ? "bg-lime-500" : "bg-taupe-400"
               }`}><Link href={"/cart"}>Cart</Link></Button>
 
           </li>
           <li >
-            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isProfile ? "bg-lime-500" : "bg-taupe-400"
+            <Button className={`text-neutral-50 text-lg font-medium rounded-2xl transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg ${isProfile ? "bg-lime-500" : "bg-taupe-400"
               }`}><Link href={"/profilePage"}>Profile</Link></Button>
 
           </li>
@@ -65,12 +69,14 @@ const Navbar = () => {
         <div className="flex gap-4">
           {!user && <ul className="flex items-center  text-sm gap-3">
             <li>
-              <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isSignUp ? "bg-lime-500" : "bg-taupe-400"
-              }`}><Link href={"/signUp"}>SignUp</Link></Button>
+              <Button className={`text-neutral-50 text-lg font-medium rounded-2xl transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg ${isSignUp ? "bg-lime-500" : "bg-taupe-400"
+                }`}><Link href={"/signUp"}>SignUp</Link></Button>
             </li>
             <li>
-              <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isSignIn ? "bg-lime-500" : "bg-taupe-400"
-              }`}><Link href={"/signIn"}>SignIn</Link></Button>
+              <Button className={`text-neutral-50 text-lg font-medium rounded-2xl transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg ${isSignIn ? "bg-lime-500" : "bg-taupe-400"
+                }`}><Link href={"/signIn"}>SignIn</Link></Button>
             </li>
           </ul>}
 
@@ -78,7 +84,7 @@ const Navbar = () => {
             user && <div className="flex gap-3">
               <Avatar>
                 <Avatar.Image alt="John Doe" src={user?.image}
-                referrerPolicy="no-referrer" 
+                  referrerPolicy="no-referrer"
                 />
                 <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
               </Avatar>

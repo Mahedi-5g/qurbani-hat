@@ -227,7 +227,8 @@ const AnimalDetailsPage = () => {
                                 required
                                 name="name"
                                 type="text"
-                                className="input input-bordered w-full rounded-xl"
+                                className="input input-bordered w-full rounded-xl transition duration-300 ease-in-out 
+    hover:scale-103 hover:shadow-lg"
                                 placeholder="Enter your name"
                             />
                         </div>
@@ -241,7 +242,8 @@ const AnimalDetailsPage = () => {
                                 required
                                 name="email"
                                 type="email"
-                                className="input input-bordered w-full rounded-xl"
+                                className="input input-bordered w-full rounded-xl transition duration-300 ease-in-out 
+    hover:scale-103 hover:shadow-lg"
                                 placeholder="Enter your email"
                             />
                         </div>
@@ -259,7 +261,8 @@ const AnimalDetailsPage = () => {
                                 required
                                 name="phone"
                                 type="tel"
-                                className="input input-bordered w-full rounded-xl"
+                                className="input input-bordered w-full rounded-xl transition duration-300 ease-in-out 
+    hover:scale-103 hover:shadow-lg"
                                 placeholder="+8801XXXXXXXXX"
                             />
                         </div>
@@ -273,7 +276,8 @@ const AnimalDetailsPage = () => {
                                 required
                                 name="address"
                                 type="text"
-                                className="input input-bordered w-full rounded-xl"
+                                className="input input-bordered w-full rounded-xl transition duration-300 ease-in-out 
+    hover:scale-103 hover:shadow-lg"
                                 placeholder="Your address"
                             />
                         </div>

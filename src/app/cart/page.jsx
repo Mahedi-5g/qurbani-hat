@@ -64,7 +64,8 @@ const CartPage = () => {
 
                     <div
                         key={index}
-                        className="border rounded-3xl p-4 shadow-xl bg-base-100"
+                        className="border border-slate-200 rounded-3xl p-4 shadow-xl bg-base-100 transition duration-300 ease-in-out 
+    hover:scale-105 hover:shadow-lg"
                     >
 
                         <Image
@@ -117,7 +118,8 @@ const CartPage = () => {
 
                         <button
                             onClick={() => handleDelete(index)}
-                            className="btn btn-error text-white w-full mt-5"
+                            className="btn btn-error text-white w-full mt-5 transition duration-300 ease-in-out 
+    hover:scale-103 hover:shadow-lg rounded-xl"
                         >
                             Remove Booking
                         </button>
