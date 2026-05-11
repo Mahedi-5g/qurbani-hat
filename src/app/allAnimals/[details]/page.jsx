@@ -10,6 +10,7 @@ import FindError from "@/components/FindError";
 import Link from "next/link";
 import { Button } from "@heroui/react";
 import LoadingAnimation from "@/components/LoadingAnimation";
+import { authClient } from "@/lib/auth-client";
 
 const AnimalDetailsPage = () => {
     const { details } = useParams();
@@ -18,6 +19,7 @@ const AnimalDetailsPage = () => {
 
     const [model, setModel] = useState(null);
     const [loading, setLoading] = useState(true);
+    const { data: session, isPending } = authClient.useSession();
 
     useEffect(() => {
         const fetchAnimal = async () => {
@@ -48,6 +50,14 @@ const AnimalDetailsPage = () => {
 
     const handleBooking = (e) => {
         e.preventDefault();
+
+        if (!session) {
+            toast.error("Please signin first!");
+
+            router.push("/signIn");
+
+            return;
+        }
 
         const form = e.target;
 
@@ -190,6 +200,16 @@ const AnimalDetailsPage = () => {
                     </p>
 
                 </div>
+
+                {!session && (
+
+                    <div className="bg-red-100 border border-red-300 text-red-600 rounded-xl p-4 text-center mb-6">
+
+                        Please signin first to book an animal.
+
+                    </div>
+
+                )}
 
                 <form
                     onSubmit={handleBooking}
