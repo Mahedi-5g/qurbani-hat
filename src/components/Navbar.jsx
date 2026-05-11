@@ -11,7 +11,9 @@ const Navbar = () => {
   const isHome = pathName === "/";
   const isAnimals = pathName === "/allAnimals";
   const isCart = pathName === "/cart";
-  const isProfile = pathName === "/profilePage"
+  const isProfile = pathName === "/profilePage";
+  const isSignIn = pathName === "/signIn";
+  const isSignUp = pathName === "/signUp"
 
   const userData = authClient.useSession()
   const user = userData.data?.user
@@ -63,10 +65,12 @@ const Navbar = () => {
         <div className="flex gap-4">
           {!user && <ul className="flex items-center  text-sm gap-3">
             <li>
-              <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signUp"}>SignUp</Link></Button>
+              <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isSignUp ? "bg-lime-500" : "bg-taupe-400"
+              }`}><Link href={"/signUp"}>SignUp</Link></Button>
             </li>
             <li>
-              <Button className="text-neutral-50 bg-lime-400 text-lg font-medium rounded-2xl"><Link href={"/signIn"}>SignIn</Link></Button>
+              <Button className={`text-neutral-50 text-lg font-medium rounded-2xl ${isSignIn ? "bg-lime-500" : "bg-taupe-400"
+              }`}><Link href={"/signIn"}>SignIn</Link></Button>
             </li>
           </ul>}
 
