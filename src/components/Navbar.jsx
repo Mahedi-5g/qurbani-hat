@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
 
 
-          <div className="lg:hidden relative">
+          <div className="md:hidden relative">
 
             <button
               className="p-2 text-taupe-500"
@@ -58,11 +58,10 @@ const Navbar = () => {
                     <Link
                       href="/"
                       onClick={() => setIsOpen(false)}
-                      className={`block px-4 py-2 rounded-xl ${
-                        isHome
+                      className={`block px-4 py-2 rounded-xl ${isHome
                           ? "bg-lime-500 text-white"
                           : "hover:bg-gray-100"
-                      }`}
+                        }`}
                     >
                       Home
                     </Link>
@@ -72,11 +71,10 @@ const Navbar = () => {
                     <Link
                       href="/allAnimals"
                       onClick={() => setIsOpen(false)}
-                      className={`block px-4 py-2 rounded-xl ${
-                        isAnimals
+                      className={`block px-4 py-2 rounded-xl ${isAnimals
                           ? "bg-lime-500 text-white"
                           : "hover:bg-gray-100"
-                      }`}
+                        }`}
                     >
                       All Animals
                     </Link>
@@ -86,11 +84,10 @@ const Navbar = () => {
                     <Link
                       href="/cart"
                       onClick={() => setIsOpen(false)}
-                      className={`block px-4 py-2 rounded-xl ${
-                        isCart
+                      className={`block px-4 py-2 rounded-xl ${isCart
                           ? "bg-lime-500 text-white"
                           : "hover:bg-gray-100"
-                      }`}
+                        }`}
                     >
                       Cart
                     </Link>
@@ -100,11 +97,10 @@ const Navbar = () => {
                     <Link
                       href="/profilePage"
                       onClick={() => setIsOpen(false)}
-                      className={`block px-4 py-2 rounded-xl ${
-                        isProfile
+                      className={`block px-4 py-2 rounded-xl ${isProfile
                           ? "bg-lime-500 text-white"
                           : "hover:bg-gray-100"
-                      }`}
+                        }`}
                     >
                       Profile
                     </Link>
@@ -134,7 +130,7 @@ const Navbar = () => {
 
           <Link href={"/"}>
 
-            <h3 className="font-bold text-xl sm:text-2xl lg:text-3xl text-taupe-500">
+            <h3 className="block md:hidden lg:block font-bold text-3xl text-taupe-500">
 
               Qurbani <span className="text-lime-500">Hat</span>
 
@@ -145,13 +141,12 @@ const Navbar = () => {
         </div>
 
 
-        <ul className="hidden lg:flex items-center gap-5 text-sm">
+        <ul className="hidden md:flex items-center gap-5 text-sm">
 
           <li>
             <Button
-              className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${
-                isHome ? "bg-lime-500" : "bg-taupe-400"
-              }`}
+              className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isHome ? "bg-lime-500" : "bg-taupe-400"
+                }`}
             >
               <Link href={"/"}>Home</Link>
             </Button>
@@ -159,9 +154,8 @@ const Navbar = () => {
 
           <li>
             <Button
-              className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${
-                isAnimals ? "bg-lime-500" : "bg-taupe-400"
-              }`}
+              className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isAnimals ? "bg-lime-500" : "bg-taupe-400"
+                }`}
             >
               <Link href={"/allAnimals"}>All Animals</Link>
             </Button>
@@ -169,9 +163,8 @@ const Navbar = () => {
 
           <li>
             <Button
-              className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${
-                isCart ? "bg-lime-500" : "bg-taupe-400"
-              }`}
+              className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isCart ? "bg-lime-500" : "bg-taupe-400"
+                }`}
             >
               <Link href={"/cart"}>Cart</Link>
             </Button>
@@ -179,9 +172,8 @@ const Navbar = () => {
 
           <li>
             <Button
-              className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${
-                isProfile ? "bg-lime-500" : "bg-taupe-400"
-              }`}
+              className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isProfile ? "bg-lime-500" : "bg-taupe-400"
+                }`}
             >
               <Link href={"/profilePage"}>Profile</Link>
             </Button>
@@ -200,9 +192,8 @@ const Navbar = () => {
 
                 <Button
                   size="sm"
-                  className={`text-white text-xs sm:text-sm lg:text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${
-                    isSignUp ? "bg-lime-500" : "bg-taupe-400"
-                  }`}
+                  className={`text-white text-xs sm:text-sm lg:text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isSignUp ? "bg-lime-500" : "bg-taupe-400"
+                    }`}
                 >
                   <Link href={"/signUp"}>SignUp</Link>
                 </Button>
@@ -213,9 +204,8 @@ const Navbar = () => {
 
                 <Button
                   size="sm"
-                  className={`text-white text-xs sm:text-sm lg:text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${
-                    isSignIn ? "bg-lime-500" : "bg-taupe-400"
-                  }`}
+                  className={`text-white text-xs sm:text-sm lg:text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isSignIn ? "bg-lime-500" : "bg-taupe-400"
+                    }`}
                 >
                   <Link href={"/signIn"}>SignIn</Link>
                 </Button>
@@ -230,11 +220,14 @@ const Navbar = () => {
 
             <div className="flex gap-3 items-center">
 
-              <Avatar
-                src={user?.image || "/user.png"}
-                name={user?.name}
-                className="w-10 h-10"
-              />
+              <Avatar className="h-10 w-10">
+                        <Avatar.Image
+                          alt="John Doe"
+                          src={user?.image}
+                          referrerPolicy="no-referrer"
+                        />
+                        <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+                      </Avatar>
 
               <Button
                 onClick={handleSignOut}
