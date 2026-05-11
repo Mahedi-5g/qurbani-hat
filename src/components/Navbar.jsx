@@ -130,7 +130,7 @@ const Navbar = () => {
 
           <Link href={"/"}>
 
-            <h3 className="block md:hidden lg:block font-bold text-3xl text-taupe-500">
+            <h3 className="block md:hidden lg:block font-bold text-2xl md:text-3xl lg:text-4xl text-taupe-500">
 
               Qurbani <span className="text-lime-500">Hat</span>
 
