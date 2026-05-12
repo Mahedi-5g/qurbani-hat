@@ -129,20 +129,12 @@ const Navbar = () => {
 
 
           <Link href={"/"}>
-
             <h3 className="block md:hidden lg:block font-bold text-2xl md:text-3xl lg:text-4xl text-taupe-500">
-
               Qurbani <span className="text-lime-500">Hat</span>
-
             </h3>
-
           </Link>
-
         </div>
-
-
         <ul className="hidden md:flex items-center gap-5 text-sm">
-
           <li>
             <Button
               className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isHome ? "bg-lime-500" : "bg-taupe-400"
@@ -151,7 +143,6 @@ const Navbar = () => {
               <Link href={"/"}>Home</Link>
             </Button>
           </li>
-
           <li>
             <Button
               className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isAnimals ? "bg-lime-500" : "bg-taupe-400"
@@ -160,7 +151,6 @@ const Navbar = () => {
               <Link href={"/allAnimals"}>All Animals</Link>
             </Button>
           </li>
-
           <li>
             <Button
               className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isCart ? "bg-lime-500" : "bg-taupe-400"
@@ -169,7 +159,6 @@ const Navbar = () => {
               <Link href={"/cart"}>Cart</Link>
             </Button>
           </li>
-
           <li>
             <Button
               className={`text-white text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isProfile ? "bg-lime-500" : "bg-taupe-400"
@@ -182,14 +171,10 @@ const Navbar = () => {
         </ul>
 
         <div className="flex gap-2 sm:gap-4 items-center">
-
-
           {!user && (
-
             <ul className="flex items-center text-sm gap-2">
 
               <li>
-
                 <Button
                   size="sm"
                   className={`text-white text-xs sm:text-sm lg:text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isSignUp ? "bg-lime-500" : "bg-taupe-400"
@@ -201,7 +186,6 @@ const Navbar = () => {
               </li>
 
               <li>
-
                 <Button
                   size="sm"
                   className={`text-white text-xs sm:text-sm lg:text-lg font-medium rounded-2xl transition duration-300 hover:scale-105 hover:shadow-lg ${isSignIn ? "bg-lime-500" : "bg-taupe-400"
@@ -217,7 +201,6 @@ const Navbar = () => {
           )}
 
           {user && (
-
             <div className="flex gap-3 items-center">
 
               <Avatar className="h-10 w-10">
